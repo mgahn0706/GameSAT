@@ -74,12 +74,18 @@
 					</div>
 
 
-					<div w3-include-html="Sidemenu.html"></div>
+					<div class="Sidebar_include"></div>
 
 			</div>
 
 		<!-- Scripts -->
-			<script>includeHTML();</script>
+		<script>
+$(document).ready(function(){
+	$.get( "Sidebar.html", function( data ) {
+			$( ".Sidebar_include" ).append(data);
+	});
+});
+</script>
 
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
