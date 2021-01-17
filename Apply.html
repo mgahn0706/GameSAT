@@ -12,6 +12,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href="assets/css/click.css" rel="stylesheet">
 		<script src="assets/js/side.js"></script>
+		<script>
+$(document).ready(function(){
+	$.get( "Sidemenu.html", function( data ) {
+			$( ".Sidebar_include" ).append(data);
+	});
+});
+</script>
 	</head>
 	<body class="is-preload">
 
@@ -79,13 +86,7 @@
 			</div>
 
 		<!-- Scripts -->
-		<script>
-$(document).ready(function(){
-	$.get( "Sidemenu.html", function( data ) {
-			$( ".Sidebar_include" ).append(data);
-	});
-});
-</script>
+
 
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
