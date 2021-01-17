@@ -9,11 +9,11 @@
 		<title>영역 추가 신청 - 고인물능력시험</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src="jquery.js"></script>
 		<script>
-$(document).ready(function(){
-	$.get( "Sidemenu.html", function( data ) {
-			$( ".Sidebar_include" ).append(data);
-	});
+$(function(){
+	$("#DivContent").load("Sidemenu.html");
+
 });
 </script>
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -82,7 +82,7 @@ $(document).ready(function(){
 					</div>
 
 
-					<div class="Sidebar_include"></div>
+					<div id="DivContent"></div>
 
 			</div>
 
